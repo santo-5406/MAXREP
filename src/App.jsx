@@ -567,8 +567,8 @@ function Cursor() {
         transformOrigin: '0 0',
       }}>
         <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 2L20 11L11 13L8 23L2 2Z" fill="#dc2626" stroke="#ff6b6b" strokeWidth="1.2" strokeLinejoin="round"/>
-          <path d="M11 13L8 23" stroke="#ff4444" strokeWidth="1.5" strokeLinecap="round"/>
+          <path d="M2 2L20 11L11 13L8 23L2 2Z" fill="#dc2626" stroke="#ff6b6b" strokeWidth="1.2" strokeLinejoin="round" />
+          <path d="M11 13L8 23" stroke="#ff4444" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       </div>
     </>
@@ -580,7 +580,7 @@ function Cursor() {
 ───────────────────────────────────────── */
 const InstaIcon = ({ size = 18 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="white">
-    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
   </svg>
 );
 
@@ -695,7 +695,7 @@ function Navbar() {
 
         {/* Center links */}
         <div className="nav-center-links" style={{ display: 'flex', gap: 36 }}>
-          {['offer','hours','address','contact'].map(id => (
+          {['offer', 'hours', 'address', 'contact'].map(id => (
             <a key={id} href={`#${id}`} className="nav-link"
               onClick={(e) => { e.preventDefault(); scrollTo(id); }}>
               {id}
@@ -729,7 +729,7 @@ function Navbar() {
           className="hamburger-btn"
           onClick={() => setMenuOpen(true)}
           style={{ display: 'none', background: 'none', border: 'none', flexDirection: 'column', gap: 5, cursor: 'none', padding: 4 }}>
-          {[0,1,2].map(i => (
+          {[0, 1, 2].map(i => (
             <span key={i} style={{ display: 'block', width: 24, height: 2, background: '#f0ece6' }} />
           ))}
         </button>
@@ -748,7 +748,7 @@ function Navbar() {
             position: 'absolute', top: 24, right: '5vw',
             background: 'none', border: 'none', color: '#f0ece6', fontSize: 32, cursor: 'none',
           }}>✕</button>
-          {['offer','hours','address','contact'].map(id => (
+          {['offer', 'hours', 'address', 'contact'].map(id => (
             <a key={id} href={`#${id}`}
               onClick={(e) => { e.preventDefault(); scrollTo(id); }}
               style={{
@@ -789,9 +789,9 @@ function Hero() {
   }, []);
 
   const orbs = [
-    { w: 600, h: 600, top: '5%',  left: '8%',   dur: '18s', color: 'rgba(220,38,38,0.11)',  anim: 'orbFloat1' },
-    { w: 500, h: 500, top: '45%', left: '55%',  dur: '22s', color: 'rgba(253,224,71,0.07)', anim: 'orbFloat2' },
-    { w: 350, h: 350, top: '65%', left: '3%',   dur: '14s', color: 'rgba(139,92,246,0.06)', anim: 'orbFloat3' },
+    { w: 600, h: 600, top: '5%', left: '8%', dur: '18s', color: 'rgba(220,38,38,0.11)', anim: 'orbFloat1' },
+    { w: 500, h: 500, top: '45%', left: '55%', dur: '22s', color: 'rgba(253,224,71,0.07)', anim: 'orbFloat2' },
+    { w: 350, h: 350, top: '65%', left: '3%', dur: '14s', color: 'rgba(139,92,246,0.06)', anim: 'orbFloat3' },
   ];
 
   return (
@@ -1182,92 +1182,92 @@ function Contact() {
       }} />
 
       <div className="section-inner" style={{ position: 'relative', zIndex: 1 }}>
-      <div style={{ marginBottom: 72, textAlign: 'center' }}>
-        <div className="reveal" style={{ fontFamily: 'Bebas Neue, cursive', fontSize: 12, color: '#dc2626', letterSpacing: '0.3em', marginBottom: 14 }}>
-          GET IN TOUCH
+        <div style={{ marginBottom: 72, textAlign: 'center' }}>
+          <div className="reveal" style={{ fontFamily: 'Bebas Neue, cursive', fontSize: 12, color: '#dc2626', letterSpacing: '0.3em', marginBottom: 14 }}>
+            GET IN TOUCH
+          </div>
+          <h2 className="reveal" style={{
+            fontFamily: 'Oswald, sans-serif', fontSize: 'clamp(48px, 6vw, 72px)',
+            fontWeight: 700, textTransform: 'uppercase', lineHeight: 0.95,
+            background: 'linear-gradient(135deg, #fff 40%, #888 100%)',
+            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+          }}>
+            CONTACT US
+          </h2>
         </div>
-        <h2 className="reveal" style={{
-          fontFamily: 'Oswald, sans-serif', fontSize: 'clamp(48px, 6vw, 72px)',
-          fontWeight: 700, textTransform: 'uppercase', lineHeight: 0.95,
-          background: 'linear-gradient(135deg, #fff 40%, #888 100%)',
-          WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-        }}>
-          CONTACT US
-        </h2>
-      </div>
 
-      <div className="contact-cols" style={{ display: 'flex', gap: 60 }}>
-        <div className="reveal-left" style={{ flex: 1 }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 28, marginBottom: 40 }}>
-            <div style={{
-              background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(220,38,38,0.15)',
-              borderLeft: '3px solid #dc2626', padding: '24px 20px',
-            }}>
-              <div style={{ fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#dc2626', letterSpacing: '0.22em', marginBottom: 12 }}>
-                CALL OR WHATSAPP
+        <div className="contact-cols" style={{ display: 'flex', gap: 60 }}>
+          <div className="reveal-left" style={{ flex: 1 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 28, marginBottom: 40 }}>
+              <div style={{
+                background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(220,38,38,0.15)',
+                borderLeft: '3px solid #dc2626', padding: '24px 20px',
+              }}>
+                <div style={{ fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#dc2626', letterSpacing: '0.22em', marginBottom: 12 }}>
+                  CALL OR WHATSAPP
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                  {['8608499128', '7094418255'].map(num => (
+                    <a key={num} href={`tel:${num}`} style={{
+                      fontFamily: 'Oswald, sans-serif', fontSize: 26, color: 'white',
+                      textDecoration: 'none', letterSpacing: '0.04em', transition: 'color 0.3s',
+                    }}
+                      onMouseEnter={e => e.target.style.color = '#dc2626'}
+                      onMouseLeave={e => e.target.style.color = 'white'}>
+                      &#128222; {num}
+                    </a>
+                  ))}
+                </div>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {['8608499128','7094418255'].map(num => (
-                  <a key={num} href={`tel:${num}`} style={{
-                    fontFamily: 'Oswald, sans-serif', fontSize: 26, color: 'white',
-                    textDecoration: 'none', letterSpacing: '0.04em', transition: 'color 0.3s',
+
+              <div style={{
+                background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(220,38,38,0.15)',
+                borderLeft: '3px solid #dc2626', padding: '24px 20px',
+              }}>
+                <div style={{ fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#dc2626', letterSpacing: '0.22em', marginBottom: 12 }}>
+                  FOLLOW &amp; MESSAGE
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                  <a href="https://wa.me/918608499128" target="_blank" rel="noopener noreferrer" style={{
+                    fontFamily: 'DM Sans, sans-serif', fontSize: 15, color: '#777',
+                    textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, transition: 'color 0.3s',
                   }}
-                    onMouseEnter={e => e.target.style.color = '#dc2626'}
-                    onMouseLeave={e => e.target.style.color = 'white'}>
-                    &#128222; {num}
+                    onMouseEnter={e => e.currentTarget.style.color = '#25D366'}
+                    onMouseLeave={e => e.currentTarget.style.color = '#777'}>
+                    &#128172; WhatsApp Chat &rarr;
                   </a>
-                ))}
+                  <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" style={{
+                    fontFamily: 'DM Sans, sans-serif', fontSize: 15, color: '#777',
+                    textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, transition: 'color 0.3s',
+                  }}
+                    onMouseEnter={e => e.currentTarget.style.color = '#e1306c'}
+                    onMouseLeave={e => e.currentTarget.style.color = '#777'}>
+                    <InstaIcon size={16} /> Follow on Instagram &rarr;
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div style={{
-              background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(220,38,38,0.15)',
-              borderLeft: '3px solid #dc2626', padding: '24px 20px',
-            }}>
-              <div style={{ fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#dc2626', letterSpacing: '0.22em', marginBottom: 12 }}>
-                FOLLOW &amp; MESSAGE
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                <a href="https://wa.me/918608499128" target="_blank" rel="noopener noreferrer" style={{
-                  fontFamily: 'DM Sans, sans-serif', fontSize: 15, color: '#777',
-                  textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, transition: 'color 0.3s',
-                }}
-                  onMouseEnter={e => e.currentTarget.style.color = '#25D366'}
-                  onMouseLeave={e => e.currentTarget.style.color = '#777'}>
-                  &#128172; WhatsApp Chat &rarr;
-                </a>
-                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" style={{
-                  fontFamily: 'DM Sans, sans-serif', fontSize: 15, color: '#777',
-                  textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, transition: 'color 0.3s',
-                }}
-                  onMouseEnter={e => e.currentTarget.style.color = '#e1306c'}
-                  onMouseLeave={e => e.currentTarget.style.color = '#777'}>
-                  <InstaIcon size={16} /> Follow on Instagram &rarr;
-                </a>
-              </div>
+            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+              <a href="tel:8608499128" className="btn-primary">CALL 8608499128</a>
+              <a href="https://wa.me/918608499128" target="_blank" rel="noopener noreferrer" className="btn-ghost">WHATSAPP NOW</a>
             </div>
           </div>
 
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            <a href="tel:8608499128" className="btn-primary">CALL 8608499128</a>
-            <a href="https://wa.me/918608499128" target="_blank" rel="noopener noreferrer" className="btn-ghost">WHATSAPP NOW</a>
+          <div className="reveal-right" style={{ flex: 1 }}>
+            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+              <input type="text" placeholder="Your Name" value={form.name}
+                onChange={e => setForm({ ...form, name: e.target.value })} required />
+              <input type="email" placeholder="Your Email Address" value={form.email}
+                onChange={e => setForm({ ...form, email: e.target.value })} required />
+              <textarea placeholder="Your Message" value={form.message}
+                onChange={e => setForm({ ...form, message: e.target.value })} required />
+              <button type="submit" className="btn-primary" style={{ width: 'fit-content' }}>
+                {sent ? 'MESSAGE SENT ✓' : 'SEND MESSAGE →'}
+              </button>
+            </form>
           </div>
         </div>
-
-        <div className="reveal-right" style={{ flex: 1 }}>
-          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-            <input type="text" placeholder="Your Name" value={form.name}
-              onChange={e => setForm({ ...form, name: e.target.value })} required />
-            <input type="email" placeholder="Your Email Address" value={form.email}
-              onChange={e => setForm({ ...form, email: e.target.value })} required />
-            <textarea placeholder="Your Message" value={form.message}
-              onChange={e => setForm({ ...form, message: e.target.value })} required />
-            <button type="submit" className="btn-primary" style={{ width: 'fit-content' }}>
-              {sent ? 'MESSAGE SENT ✓' : 'SEND MESSAGE →'}
-            </button>
-          </form>
-        </div>
-      </div>
       </div>
     </section>
   );
@@ -1304,130 +1304,130 @@ function Footer() {
 
       <div style={{ padding: '72px 5vw 56px', position: 'relative', zIndex: 1 }}>
         <div className="section-inner">
-        {/* Brand center block */}
-        <div style={{ textAlign: 'center', marginBottom: 60 }}>
-          <img
-            src={LOGO_PATH} alt="MaxRep Logo"
-            style={{
-              width: 80, height: 'auto', marginBottom: 16,
-              filter: 'drop-shadow(0 0 16px rgba(220,38,38,0.5))',
-              transition: 'filter 0.4s, transform 0.4s', cursor: 'none',
-            }}
-            onMouseEnter={e => { e.target.style.filter = 'drop-shadow(0 0 30px rgba(220,38,38,0.9))'; e.target.style.transform = 'scale(1.08)'; }}
-            onMouseLeave={e => { e.target.style.filter = 'drop-shadow(0 0 16px rgba(220,38,38,0.5))'; e.target.style.transform = 'scale(1)'; }}
-          />
-          <div style={{ fontFamily: 'Oswald, sans-serif', fontSize: 36, fontWeight: 700 }}>
-            <span style={{ color: 'white' }}>MAX</span>
-            <span style={{ color: '#dc2626' }}>REP</span>
-          </div>
-          <div style={{ fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#444', letterSpacing: '0.38em', marginTop: 4 }}>
-            FITNESS CENTRE
-          </div>
-          <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#444', lineHeight: 1.8, marginTop: 14, maxWidth: 360, margin: '14px auto 0' }}>
-            Open 24 hours &middot; 365 days a year &middot; Bharathi Nagar, Trichy
-          </p>
-        </div>
-
-        {/* Grid */}
-        <div className="footer-grid" style={{
-          display: 'grid', gridTemplateColumns: '1fr 1fr 1fr',
-          gap: 40, maxWidth: 820, margin: '0 auto',
-        }}>
-          {/* Address */}
-          <div>
-            <div style={{
-              fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#dc2626',
-              letterSpacing: '0.28em', marginBottom: 18,
-              borderBottom: '1px solid rgba(220,38,38,0.2)', paddingBottom: 10,
-            }}>ADDRESS</div>
-            {["Opp. Indian Oil Petrol Bunk", "Bharathi Nagar, Green's 2nd St", "Crawford Colony", "Trichy \u2013 620012"].map(line => (
-              <div key={line} style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#555', lineHeight: 2 }}>{line}</div>
-            ))}
+          {/* Brand center block */}
+          <div style={{ textAlign: 'center', marginBottom: 60 }}>
+            <img
+              src={LOGO_PATH} alt="MaxRep Logo"
+              style={{
+                width: 80, height: 'auto', marginBottom: 16,
+                filter: 'drop-shadow(0 0 16px rgba(220,38,38,0.5))',
+                transition: 'filter 0.4s, transform 0.4s', cursor: 'none',
+              }}
+              onMouseEnter={e => { e.target.style.filter = 'drop-shadow(0 0 30px rgba(220,38,38,0.9))'; e.target.style.transform = 'scale(1.08)'; }}
+              onMouseLeave={e => { e.target.style.filter = 'drop-shadow(0 0 16px rgba(220,38,38,0.5))'; e.target.style.transform = 'scale(1)'; }}
+            />
+            <div style={{ fontFamily: 'Oswald, sans-serif', fontSize: 36, fontWeight: 700 }}>
+              <span style={{ color: 'white' }}>MAX</span>
+              <span style={{ color: '#dc2626' }}>REP</span>
+            </div>
+            <div style={{ fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#444', letterSpacing: '0.38em', marginTop: 4 }}>
+              FITNESS CENTRE
+            </div>
+            <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#444', lineHeight: 1.8, marginTop: 14, maxWidth: 360, margin: '14px auto 0' }}>
+              Open 24 hours &middot; 365 days a year &middot; Bharathi Nagar, Trichy
+            </p>
           </div>
 
-          {/* Contact */}
-          <div>
-            <div style={{
-              fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#dc2626',
-              letterSpacing: '0.28em', marginBottom: 18,
-              borderBottom: '1px solid rgba(220,38,38,0.2)', paddingBottom: 10,
-            }}>CONTACT</div>
-            {['+91 8608499128', '+91 7094418255', 'WhatsApp Available', 'Open 24/7 \u00B7 365 Days'].map(line => (
-              <div key={line} style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#555', lineHeight: 2 }}>{line}</div>
-            ))}
-          </div>
+          {/* Grid */}
+          <div className="footer-grid" style={{
+            display: 'grid', gridTemplateColumns: '1fr 1fr 1fr',
+            gap: 40, maxWidth: 820, margin: '0 auto',
+          }}>
+            {/* Address */}
+            <div>
+              <div style={{
+                fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#dc2626',
+                letterSpacing: '0.28em', marginBottom: 18,
+                borderBottom: '1px solid rgba(220,38,38,0.2)', paddingBottom: 10,
+              }}>ADDRESS</div>
+              {["Opp. Indian Oil Petrol Bunk", "Bharathi Nagar, Green's 2nd St", "Crawford Colony", "Trichy \u2013 620012"].map(line => (
+                <div key={line} style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#555', lineHeight: 2 }}>{line}</div>
+              ))}
+            </div>
 
-          {/* Social */}
-          <div>
-            <div style={{
-              fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#dc2626',
-              letterSpacing: '0.28em', marginBottom: 18,
-              borderBottom: '1px solid rgba(220,38,38,0.2)', paddingBottom: 10,
-            }}>FOLLOW US</div>
-            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer"
-              className="btn-insta"
-              style={{ display: 'inline-flex', marginBottom: 16, fontSize: 12, padding: '10px 20px' }}>
-              <InstaIcon size={16} /> Instagram
-            </a>
-            <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#444', lineHeight: 1.8 }}>
-              Stay updated with our<br />latest offers &amp; events
+            {/* Contact */}
+            <div>
+              <div style={{
+                fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#dc2626',
+                letterSpacing: '0.28em', marginBottom: 18,
+                borderBottom: '1px solid rgba(220,38,38,0.2)', paddingBottom: 10,
+              }}>CONTACT</div>
+              {['+91 8608499128', '+91 7094418255', 'WhatsApp Available', 'Open 24/7 \u00B7 365 Days'].map(line => (
+                <div key={line} style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#555', lineHeight: 2 }}>{line}</div>
+              ))}
+            </div>
+
+            {/* Social */}
+            <div>
+              <div style={{
+                fontFamily: 'Bebas Neue, cursive', fontSize: 11, color: '#dc2626',
+                letterSpacing: '0.28em', marginBottom: 18,
+                borderBottom: '1px solid rgba(220,38,38,0.2)', paddingBottom: 10,
+              }}>FOLLOW US</div>
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer"
+                className="btn-insta"
+                style={{ display: 'inline-flex', marginBottom: 16, fontSize: 12, padding: '10px 20px' }}>
+                <InstaIcon size={16} /> Instagram
+              </a>
+              <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#444', lineHeight: 1.8 }}>
+                Stay updated with our<br />latest offers &amp; events
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Divider */}
-        <div style={{
-          height: 1, marginTop: 56, marginBottom: 28,
-          background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent)',
-        }} />
+          {/* Divider */}
+          <div style={{
+            height: 1, marginTop: 56, marginBottom: 28,
+            background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent)',
+          }} />
 
-        {/* Bottom bar */}
-        <div className="footer-bottom" style={{
-          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-          flexWrap: 'wrap', gap: 16,
-        }}>
-          <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#333' }}>
-            &copy; 2025 MaxRep Fitness Centre &middot; Tiruchirappalli, Tamil Nadu
-          </span>
-          <div style={{ display: 'flex', gap: 24 }}>
-            {['offer','hours','address','contact'].map(id => (
-              <a key={id} href={`#${id}`} className="footer-nav-link"
-                onClick={e => { e.preventDefault(); scrollTo(id); }}>
-                {id.toUpperCase()}
-              </a>
-            ))}
+          {/* Bottom bar */}
+          <div className="footer-bottom" style={{
+            display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+            flexWrap: 'wrap', gap: 16,
+          }}>
+            <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#333' }}>
+              &copy; 2025 MaxRep Fitness Centre &middot; Tiruchirappalli, Tamil Nadu
+            </span>
+            <div style={{ display: 'flex', gap: 24 }}>
+              {['offer', 'hours', 'address', 'contact'].map(id => (
+                <a key={id} href={`#${id}`} className="footer-nav-link"
+                  onClick={e => { e.preventDefault(); scrollTo(id); }}>
+                  {id.toUpperCase()}
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Credits */}
-        <div style={{
-          marginTop: 28,
-          paddingTop: 20,
-          borderTop: '1px solid rgba(255,255,255,0.04)',
-          textAlign: 'center',
-        }}>
-          <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#2a2a36' }}>
-            Designed &amp; Developed by&nbsp;
-          </span>
-          <a
-            href="https://santo-5406.github.io/SANTO-PORTFOLIO-NEW/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              fontFamily: 'Oswald, sans-serif',
-              fontSize: 11,
-              color: '#444',
-              textDecoration: 'none',
-              letterSpacing: '0.12em',
-              textTransform: 'uppercase',
-              transition: 'color 0.3s',
-            }}
-            onMouseEnter={e => e.currentTarget.style.color = '#dc2626'}
-            onMouseLeave={e => e.currentTarget.style.color = '#444'}
-          >
-            Santo
-          </a>
-        </div>
+          {/* Credits */}
+          <div style={{
+            marginTop: 28,
+            paddingTop: 20,
+            borderTop: '1px solid rgba(255,255,255,0.04)',
+            textAlign: 'center',
+          }}>
+            <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#2a2a36' }}>
+              Designed &amp; Developed by&nbsp;
+            </span>
+            <a
+              href="https://santo-5406.github.io/SANTO-PORTFOLIO-NEW/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontFamily: 'Oswald, sans-serif',
+                fontSize: 11,
+                color: '#444',
+                textDecoration: 'none',
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+                transition: 'color 0.3s',
+              }}
+              onMouseEnter={e => e.currentTarget.style.color = '#dc2626'}
+              onMouseLeave={e => e.currentTarget.style.color = '#444'}
+            >
+              Santo
+            </a>
+          </div>
         </div>
       </div>
     </footer>
