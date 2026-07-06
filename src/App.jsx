@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
 const LOGO_PATH = `${import.meta.env.BASE_URL || '/'}logo.png`;
-const INSTAGRAM_URL = 'https://www.instagram.com/maxrep_fitness_center?igsh=MTRvc21hc2dteXJ6Yw==';
+const INSTAGRAM_URL = 'https://www.instagram.com/haribalann?utm_source=qr';
 
 /* ─────────────────────────────────────────
    GLOBAL STYLES
