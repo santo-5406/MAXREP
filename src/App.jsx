@@ -16,6 +16,10 @@ const GLOBAL_CSS = `
     cursor: none;
     overflow-x: hidden;
   }
+  /* Restore native cursor on touch / mobile devices */
+  @media (pointer: coarse) {
+    body, a, button, input, textarea, * { cursor: auto !important; }
+  }
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: #0f0f14; }
   ::-webkit-scrollbar-thumb { background: linear-gradient(#dc2626, #fde047); }
@@ -496,10 +500,17 @@ function Cursor() {
   const arrowRef = useRef(null);
   const glowRef = useRef(null);
   const pos = useRef({ x: -200, y: -200 });
-  const rafId = useRef(null);
   const isHovering = useRef(false);
 
+  // Detect touch / mobile — skip custom cursor entirely on those devices
+  const isTouchDevice =
+    typeof window !== 'undefined' &&
+    (window.matchMedia('(pointer: coarse)').matches ||
+      'ontouchstart' in window ||
+      navigator.maxTouchPoints > 0);
+
   useEffect(() => {
+    if (isTouchDevice) return; // no listeners needed on mobile
     const onMove = (e) => {
       pos.current = { x: e.clientX, y: e.clientY };
       if (arrowRef.current) {
@@ -526,12 +537,12 @@ function Cursor() {
       }
     };
     window.addEventListener('mousemove', onMove);
-    return () => {
-      window.removeEventListener('mousemove', onMove);
-    };
-  }, []);
+    return () => window.removeEventListener('mousemove', onMove);
+  }, [isTouchDevice]);
 
-  // Red arrow SVG cursor
+  // On touch/mobile — render nothing, native cursor remains
+  if (isTouchDevice) return null;
+
   return (
     <>
       {/* Radial glow under cursor */}
