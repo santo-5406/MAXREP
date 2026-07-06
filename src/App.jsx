@@ -1398,6 +1398,36 @@ function Footer() {
             ))}
           </div>
         </div>
+
+        {/* Credits */}
+        <div style={{
+          marginTop: 28,
+          paddingTop: 20,
+          borderTop: '1px solid rgba(255,255,255,0.04)',
+          textAlign: 'center',
+        }}>
+          <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#2a2a36' }}>
+            Designed &amp; Developed by&nbsp;
+          </span>
+          <a
+            href="https://santo-5406.github.io/SANTO-PORTFOLIO-NEW/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              fontFamily: 'Oswald, sans-serif',
+              fontSize: 11,
+              color: '#444',
+              textDecoration: 'none',
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              transition: 'color 0.3s',
+            }}
+            onMouseEnter={e => e.currentTarget.style.color = '#dc2626'}
+            onMouseLeave={e => e.currentTarget.style.color = '#444'}
+          >
+            Santo
+          </a>
+        </div>
         </div>
       </div>
     </footer>
